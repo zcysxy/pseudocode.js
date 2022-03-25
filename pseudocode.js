@@ -68,13 +68,13 @@ module.exports = {
     },
 
     renderClass: function(elements, options) {
-        for (let index = elements.length-1; index >= 0; index--) {
+        for (let index = elements.length - 1; index >= 0; index--) {
             const elem = elements[index];
-            
+
             if (!(elem instanceof Element))
                 throw 'a DOM element is required';
-            
-            this.renderElement(elem,options)
+
+            this.renderElement(elem, options);
         }
     },
 };
